@@ -18,5 +18,5 @@ func DeleteAt[T any](src []T, index int) ([]T, T, error) {
 	for i := index; i < length-1; i++ {
 		src[i] = src[i+1]
 	}
-	return src[:length-1], delElem, nil
+	return Shrink(src[:length-1]), delElem, nil
 }
