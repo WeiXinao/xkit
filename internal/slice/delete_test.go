@@ -4,7 +4,7 @@ import "testing"
 
 func TestDeleteAt(t *testing.T) {
 	s := []int{1, 2, 3, 4, 5}
-	s2, e, err := DeleteAt[int](s, 5)
+	s2, e, err := Delete[int](s, 5)
 	if err != nil {
 		t.Fatal(err)
 	}

@@ -15,7 +15,7 @@ func TestShrink(t *testing.T) {
 
 	var err error
 	for i := 0; i < 1025; i++ {
-		s, _, err = DeleteAt[int](s, 0)
+		s, _, err = Delete[int](s, 0)
 		if err != nil {
 			t.Fatal(err)
 		}
